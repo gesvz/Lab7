@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio 7</title>
+
+
+</head>
+
+<body>
+  <section>
+  
+  <button onclick="obtenerDatos()">cargar</button>
+    <button onclick="limpiarContenedor()">limpiar</button>
+  
+    <table border="2">
+       <thead>
+      <tr>
+          <th>DESCRIPCIÓN DEL EJEMPLO</th>
+          <th>EJEMPLO</th>
+          <th>BÓTON PARA ACTIVAR EL EJEMPLO</th>
+      </tr>
+      </thead>
+
+<tbody>
+      <tr>
+          <td>1. Cambiar el color de párrafo (uso de style)</td>
+          <td><p id="p1">parrafo</p></td>
+          <td><input type="button" id="e1" value="click" onclick="funcionejemplo1()"></td>
+      </tr>
+
+      <tr>
+          <td>2. Añadir texto a un párrafo (uso de operadores)</td>
+          <td><p id="p2"></p></td>
+          <td><input type="button" id="e2" value="click" onclick="funcionejemplo2()"></td>
+      </tr>
+
+      <tr>
+          <td>3. Concatenar el valor de dos textos (uso de operadores), <i>Ingresar nombre</i></td>
+          <td><p id="p3">hola</p><input type="text" id="input3"></td>
+          <td><input type="button" id="e3" value="click" onclick="funcionejemplo3()"></td>
+      </tr>
+
+      <tr>
+          <td>4. Eliminar valores de una lista despegable (uso de atributos de etiqueta)</td>
+          <td>
+              <select name="lista" id="e4">
+                  <option value="js">javascript</option>
+                  <option value="html">html</option>
+                  <option value="css">css</option>
+              </select>
+          </td>
+          <td><input type="button" id="b4" value="click" onclick="funcionejemplo4()"></td>
+      </tr>
+
+      <tr>
+          <td>5. Un botón que me lleve a un video de youtube (con js) (uso de href en js)</td>
+          <td><input type="button" id="e5" value="youtube" onclick="funcionejemplo5()"></td>
+          <td><input type="button" id="b5" value="click" onclick="displaybutton5()"></td>
+      </tr>
+
+      <tr>
+          <td>6. Mandar un mensaje al usuario con el nombre colocado en el punto 1.3 (uso de alert)</td>
+          <td></td>
+          <td><button id="e6" value="click" onclick="funcionejemplo6()">click</button></td>
+      </tr>
+
+      <tr>
+          <td>7. Manda el nombre, a la consola de js del navegador (uso de console)</td>
+          <td>checa la consola (F12)</td>
+          <td><button id="e7" onclick="funcionejemplo7()">click</button></td>
+      </tr>
+
+      <tr>
+          <td>8. Un check, e imprimir su estado (uso de atributos del checkbox)</td>
+          <td><input type="checkbox" id="checkbox"><p id="p8"></p></td>
+          <td><button id="e8" onclick="funcionejemplo8()">click</button></td>
+      </tr>
+
+      <tr>
+          <td>9. Un radio e imprimir su estado (uso de atributos del radiobutton)</td>
+          <td><input type="radio" id="radio"><p id="p9"></p></td>
+          <td>
+            <button id="e9" onclick="funcionejemplo9()">click</button>
+            <button onclick="desmarcarRadio()">desmarcar</button>
+          </td>
+      </tr>
+
+      <tr>
+        <td>10.    Una validación de un campo, si este es número enviar un mensaje que solo se permiten teclas. (investigar con que función se hace)</td>
+        <td><input type="text" id="input10"><p id="p10"></p></td>
+        <td><button id="e10" onclick="funcionejemplo10()">click</button></td>
+      </tr>
+      </tbody>
+    <tbody id="contenedor">
+    
+    </tbody>
+        
+    </table>
+    
+    
+  </section>
+</body>
+<script src="script.js"></script>
+
+</html>
